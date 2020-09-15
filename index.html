@@ -12,13 +12,14 @@
 </head>
 
 <body>
+
+    <!-- header -->
     <header class="header">
         <div class="header__block container">
-            <a class="header__brand brand" href="/" alt="Logo"><img class="brand__logo" src="media/logo/logo_linear.svg"
-                    alt="logo" height="40"></a>
+            <a class="header__brand brand" href="#home" alt="Logo"><img class="brand__logo"
+                    src="media/logo/logo_linear.svg" alt="logo" height="50"></a>
             <ul class="header__menu menu">
-                <li class="menu__item"><a href="#" class="menu__link scroll-to">home</a></li>
-                <li class="menu__item"><a href="#" class="menu__link scroll-to">about</a></li>
+                <li class="menu__item"><a href="#about-me" class="menu__link scroll-to">about me</a></li>
                 <li class="menu__item"><a href="#" class="menu__link scroll-to">portfolio</a></li>
                 <li class="menu__item"><a href="#" class="menu__link scroll-to">price</a></li>
                 <li class="menu__item"><a href="#" class="menu__link scroll-to">contacts</a></li>
@@ -28,18 +29,81 @@
                 <img src="media/icon/facebook.svg" alt="facebook" height="20">
                 <img src="media/icon/twitter.svg" alt="twitter" height="20">
             </div>
-            <button class="header__btn btn" type="submit">write me</button>
+            <button class="header__btn btn" type="submit">click me</button>
         </div>
     </header>
 
+    <!-- home -->
+    <section id="home" class="header__section">
+        <div class="header__content">
+            <div class="content container">
+                <div class="content__colume content__colume--left">
+                    <h1 class="content__title">
+                        Creating user-friendly web products
+                    </h1>
+                    <h3 class="content__subtitle">click and get a design logo for free</h3>
+                    <button class="content__button btn" type="submit">click me</button>
+                </div>
+                <div class="content__colume content__colume--right">
+                    <img class="content__img" src="media/bg/home__col_right.svg" alt="Welcome">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="header__content content">
-        <h1 class="content__title">
-            Hello! I'm Web Developer
-        </h1>
-        <h3 class="content__subtitle">I will create for you perfectly smart web products</h3>
-        <button class="content__button btn" type="submit">write me</button>
-    </div>
+    <!-- about -->
+    <section id="about-me" class="section__about h100">
+        <div class="about__content  content container">
+
+            <div class="content__colume content__colume--left">
+                <img class="content__img" src="media/bg/about.svg" alt="Skills">
+            </div>
+            <div class="content__colume content__colume--right">
+                <h2 class="content__title">
+                    About me
+                </h2>
+                <p class="content__subtitle">Hi! My name is Sergey Popov. <br>I am a frontend developer and project Manager.<br>
+                    I create modern websites and user-friendly web applications.</p>
+                <h3>My skills</h3>
+
+                <ol>
+
+                    <li>Frontend development
+                        <ul>
+                            <li>JavaScript (ES6-ES11)</li>
+                            <li>HTML (HTML5)</li>
+                            <li>CSS (CSS3)</li>
+                            <li>Gulp</li>
+                            <li>BEM</li>
+                            <li>SASS</li>
+                            <li>GIT</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Web Design
+                        <ul>
+                            <li>UX Design</li>
+                            <li>UI Design</li>
+                            <li>Figma</li>
+                            <li>Adobe Photoshop</li>
+                            <li>GIMP</li>
+                            <li>Inkscape</li>
+                        </ul>
+
+                    </li>
+                    
+                </ol>
+
+                <!-- <button class="content__button btn" type="submit">click me</button> -->
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
 
 
 

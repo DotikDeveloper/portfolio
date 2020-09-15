@@ -7,11 +7,32 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: $pallete__background;
 }
 
 * {
     font-family: 'Nova Mono', monospace;
     color: $pallete__fonts--dark;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
 }
 
 .container {
@@ -21,20 +42,20 @@ body {
 button.btn {
     padding: 3px 20px;
     background: $pallete__primary;
-    box-shadow: 0px 2px 0px $pallete__fonts--light;
+    box-shadow: 0px 2px 0px $pallete__shadow;
     border-radius: 5px;
     font-family: NovaMono;
     font-size: 18px;
     line-height: 33px;
     // text-transform: uppercase;
-    color: $pallete__fonts--light;
+    color: $pallete__fonts--dark;
     border: none;
     position: relative;
 
     &:hover {
         top: 1px;
         opacity: .95;
-        box-shadow: 0px 1px 0px $pallete__fonts--light;
+        box-shadow: 0px 1px 0px $pallete__shadow;
         border-radius: 5px;
 
     }
@@ -60,7 +81,7 @@ button.btn {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
     // .header__block
 
     &__block {
@@ -71,19 +92,27 @@ button.btn {
 
     // .header__brand
 
-    &__brand {}
+    // &__brand {}
 
     // .header__menu
 
-    &__menu {}
+    // &__menu {}
 
     // .header__btn
 
-    &__btn {}
+    &__btn {
+        color: red;
+    }
 
     // .header__content
 
-    &__content {}
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        text-align: center;
+    }
 
     &__icon {
         & img {
@@ -97,6 +126,7 @@ button.btn {
                 background-color: $pallete__primary;
                 opacity: .95;
             }
+
             &:active {
                 opacity: .85;
             }
@@ -127,7 +157,7 @@ button.btn {
 
     &__item {
         list-style-type: none;
-        margin-right: 25px;
+        margin-right: 45px;
     }
 
     // .menu__link
@@ -151,19 +181,130 @@ button.btn {
 
         }
     }
+
+    
 }
 
+
 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+
+    // .content__colume
+    &__colume {
+        align-self:flex-end;
+    }
+
+    // .content__colume--left
+
+    &__colume--left {
+       text-align: left;
+    }
 
     // .content__title
 
-    &__title {}
+    &__title {
+        color: $pallete__primary;
+        margin-bottom: 0;
+            
+    }
 
     // .content__subtitle
 
-    &__subtitle {}
+    &__subtitle {
+        margin-top: 5px;
+    }
 
     // .content__button
 
-    &__button {}
+    &__button.btn {
+        width: 50%;
+        font-size: 36px;
+        padding: 20px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
 }
+
+    // .content__colume--right
+
+    // &__colume--right {
+    // }
+
+    // .content__img
+
+    &__img {
+        width: 600px;
+        
+}
+}
+
+
+//-------------------------about------------------------------//
+
+.section {
+
+    // .section__about
+
+    &__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+}
+.about {
+
+    // .about__content
+
+    &__content.content.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+#about-me .content {
+
+    // .content__colume
+
+    &__colume  {        
+    }
+
+    // .content__colume--left
+
+    &__colume--left {
+    }
+
+    // .content__img
+
+    &__img {
+        
+    }
+
+    // .content__colume--right
+
+    &__colume--right {
+    }
+
+    // .content__title
+
+    &__title {
+    }
+
+    // .content__subtitle
+
+    &__subtitle {
+    }
+
+    // .content__button
+
+    &__button {
+    }
+}
+
+
