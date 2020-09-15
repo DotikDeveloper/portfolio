@@ -1,0 +1,169 @@
+//-------------------------IMPORT------------------------------//
+@import '_fonts.scss';
+@import '_color.scss';
+
+//-------------------------basis------------------------------//
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Nova Mono', monospace;
+    color: $pallete__fonts--dark;
+}
+
+.container {
+    width: 1200px;
+}
+
+button.btn {
+    padding: 3px 20px;
+    background: $pallete__primary;
+    box-shadow: 0px 2px 0px $pallete__fonts--light;
+    border-radius: 5px;
+    font-family: NovaMono;
+    font-size: 18px;
+    line-height: 33px;
+    // text-transform: uppercase;
+    color: $pallete__fonts--light;
+    border: none;
+    position: relative;
+
+    &:hover {
+        top: 1px;
+        opacity: .95;
+        box-shadow: 0px 1px 0px $pallete__fonts--light;
+        border-radius: 5px;
+
+    }
+
+    &:active {
+        top: 2px;
+        background: $pallete__primary;
+        opacity: 0.75;
+        box-shadow: none;
+        border-radius: 5px;
+
+    }
+
+}
+
+
+//-------------------------header------------------------------//
+
+.header {
+    margin: 0;
+    padding: 20px;
+    background-color: $pallete__fonts--dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // .header__block
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__brand
+
+    &__brand {}
+
+    // .header__menu
+
+    &__menu {}
+
+    // .header__btn
+
+    &__btn {}
+
+    // .header__content
+
+    &__content {}
+
+    &__icon {
+        & img {
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &:hover {
+                background-color: $pallete__primary;
+                opacity: .95;
+            }
+            &:active {
+                opacity: .85;
+            }
+        }
+    }
+}
+
+.brand {
+
+    // .brand__logo
+
+    &__logo {
+        &:hover {
+            opacity: 0.95;
+        }
+
+        &:active {
+            opacity: 0.85;
+        }
+    }
+}
+
+.menu {
+
+    display: flex;
+    justify-content: space-around;
+    // .menu__item
+
+    &__item {
+        list-style-type: none;
+        margin-right: 25px;
+    }
+
+    // .menu__link
+
+    &__link {
+        color: $pallete__fonts--light;
+        text-decoration: none;
+        position: relative;
+        font-size: 18px;
+
+        &:hover {
+            color: $pallete__primary;
+            top: -4px;
+            text-decoration: underline;
+
+        }
+
+        &:active {
+            opacity: .85;
+            top: -2px;
+
+        }
+    }
+}
+
+.content {
+
+    // .content__title
+
+    &__title {}
+
+    // .content__subtitle
+
+    &__subtitle {}
+
+    // .content__button
+
+    &__button {}
+}
