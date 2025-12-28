@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dotdev.site/sitemap.xml
+
+# Disallow admin and private areas (removed - directories no longer exist)
+
+# Allow all images
+Allow: /img/
+
+# Allow CSS and JS
+Allow: /css/
+Allow: /js/

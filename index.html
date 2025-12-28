@@ -1,385 +1,399 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="yandex-verification" content="e2a4d47d4dc62fe8" />
-  <title>Creating Web Interfaces</title>
-  <meta name="description" content="This is the personal site of webmaster Sergei Popov. Creation of unique and convenient web interfaces. Admin panels for sites. Web applications. Web applications. Progressive Web applications. Single-page web applications.>
-  <!-- MDB icon -->
-  <link rel=" icon" href="img/favicon.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-  <!-- MDB ESSENTIAL -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
-  <!-- MDB PLUGINS -->
-  <link rel="stylesheet" href="plugins/css/all.min.css" />
-  <!-- Custom style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Архитектор программных веб-продуктов" />
+  <title>Сергей Попов</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="canonical" href="https://dotdev.site/" />
 </head>
-
 <body>
-  <!-- Start your project here-->
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbar-scroll">
-      <div class="container">
-        <a class="navbar-brand" href="#intro">
-          <img src="img/logo.png" height="30" loading="lazy" alt="DotDev.site" />
-        </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="img/logo_small.png" alt="Logo" width="75" height="75" />
+        <div class="logo-text">
+          <span class="logo-firstname">Сергей</span>
+          <span class="logo-lastname">ПОПОВ</span>
+        </div>
+      </a>
+      <nav class="nav-desktop">
+        <a href="/" class="nav-link active">Главная</a>
+        <a href="about.html" class="nav-link">Обо мне</a>
+        <a href="#expertise" class="nav-link">Мой опыт</a>
+        <a href="#faq" class="nav-link">Частые вопросы</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-hire" id="hireButton">Оставить заявку</button>
+        <button class="burger-button" id="burgerButton" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#stages">Stages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav d-flex flex-row">
-            <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" target="_blank" href="https://www.facebook.com/DotikDeveloper">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/dotikdeveloper">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-    <!-- Navbar -->
-
-    <!--Section: Design Block-->
-    <section>
-      <!-- Intro -->
-      <div id="intro" class="text-center bg-image vh-100" style="background-image: url(img/bg.jpg);">
-        <div class="mask" style="background-color: rgba(255, 255, 255, 0.7);">
-          <div class="d-flex justify-content-center align-items-center h-100 mt-4">
-            <div>
-              <h1 class="display-2 mb-4"><strong>Sergei Popov</strong></h1>
-              <h5 class="text-uppercase mb-5">
-                <mark style="background-color: rgba(248, 192, 67, 0.7);">Frontend developer and UX designer</mark>
-              </h5>
-              <a href="#about" class="btn btn-floating btn-lg btn-dark"><i class="fas fa-angle-down"
-                  aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Intro -->
-    </section>
-    <!--Section: Design Block-->
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/" class="mobile-menu-link">Главная</a>
+      <a href="about.html" class="mobile-menu-link">Обо мне</a>
+      <a href="#expertise" class="mobile-menu-link">Мой опыт</a>
+      <a href="#faq" class="mobile-menu-link">Частые вопросы</a>
+      <button class="mobile-menu-hire" id="mobileHireButton">Оставить заявку</button>
+    </div>
   </header>
 
-  <main>
-    <div class="container my-5">
-      <!--Section: Design Block-->
-      <section class="text-center pt-5" id="about">
-        <h2 class="mb-5 pt-5">About me</h2>
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title">Архитектор программного обеспечения</h1>
+          <div class="hero-icon">
+            <img src="img/union.svg" alt="icon" />
+          </div>
+        </div>
 
-        <p class="text-center mb-5 mx-auto w-responsive">
-          I am Frontend developer and UX designer. My main direction is to create user-friendly web application
-          interfaces.
-          I’m interested in new challenges and the opportunity to apply my skills and experience to complex projects.
-        </p>
+        <div class="hero-grid">
+          <div class="hero-icon-4">
+            <img src="img/Icons_four_circle.svg" alt="four circle icon" />
+          </div>
+          <p class="hero-description">
+            Создадим будущее Интернета с помощью инновационных технологий и
+            масштабируемых решений.
+          </p>
+          <h2 class="hero-subtitle">ЭКСПЕРТ ПО ПРОВЕРКЕ КОДА</h2>
+        </div>
 
-        <div class="row">
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card hover-shadow-light">
-              <div class="card-body">
-                <i class="fas fa-laptop fa-3x mt-3 text-dark"></i>
-                <h5 class="card-title my-4 text-dark">Freelance</h5>
-                <p class="card-text mb-3">
-                  Working as a freelancer allows you to fully immerse yourself in the client’s project.
-                </p>
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="hero-badge">Обеспечение качества кода</span>
+            <span class="hero-badge">Инженерные решения по производительности</span>
+            <span class="hero-badge">Аудит веб-решений</span>
+            <span class="hero-badge">Анализ архитектуры</span>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="img/1.avif" alt="background screen" class="hero-image" />
+          </div>
+          <div class="hero-text">
+            <h4 class="hero-text-title">Создание приложений будущего</h4>
+            <p class="hero-text-description">
+              Мои основные компетенции включают разработку архитектуры
+              программного обеспечения, инженерное проектирование
+              производительности и создание поддерживаемых кодовых баз. Также я
+              предоставляю техническое консультирование и наставничество для
+              команд.
+            </p>
+            <a href="#expertise" class="icon-button">
+              <span>Узнать больше</span>
+              <div class="icon-button-icon">
+                <img src="img/arrow_1.svg" alt="arrow" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-marquee">
+          <div class="marquee-content">
+            <span>Аудит доступности веб-сайта</span>
+            <span>Обзор кода</span>
+            <span>Метрики производительности</span>
+            <span>Анализ скорости страницы</span>
+          </div>
+        </div>
+
+        <div class="hero-footer">
+          <img src="img/freelancer.svg" alt="freelancer" class="hero-footer-image" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <h3 class="section-title">Обо мне</h3>
+        <div class="section-content">
+          <div class="about-left">
+            <p class="about-text">
+              Как Senior Frontend Engineer и Архитектор программного обеспечения с
+              более чем 7-летним опытом, я специализируюсь на разработке
+              масштабируемых веб-решений и внедрении современных архитектурных
+              паттернов.
+            </p>
+            <p class="about-text">
+              Мой опыт охватывает разработку корпоративных решений, создание
+              универсальных компонентов и архитектуры для быстрой разработки
+              приложений.
+            </p>
+            <p class="about-text">
+              Я успешно руководил командами разработчиков, проводил код-ревью и
+              внедрял оптимизации производительности, что привело к значительному
+              повышению продуктивности.
+            </p>
+            <a href="about.html" class="icon-button">
+              <span>Узнать больше</span>
+              <div class="icon-button-icon">
+                <img src="img/arrow_1.svg" alt="arrow" />
+              </div>
+            </a>
+          </div>
+          <div class="about-right">
+            <div class="card-list">
+              <h3 class="card-list-title">Техническая экспертиза</h3>
+              <ul class="card-list-items">
+                <li>Frontend: React.js, Vue.js, Next.js, TypeScript</li>
+                <li>Backend: Node.js, NestJS, Python, PostgreSQL</li>
+                <li>Архитектура: Микросервисы, DDD, Event-Driven</li>
+                <li>DevOps: Docker, Git, CI/CD</li>
+              </ul>
+            </div>
+            <div class="card-list">
+              <h3 class="card-list-title">Ключевые достижения</h3>
+              <ul class="card-list-items">
+                <li>Сокращение времени разработки на 20% за счет улучшения архитектуры</li>
+                <li>Разработка библиотеки цифрового распознавания отпечатков для идентификации пользователей</li>
+                <li>Создание защищенных систем обработки платежей</li>
+                <li>Оптимизация архитектуры фильтрации и обработки данных</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote Section -->
+      <section class="quote-section">
+        <div class="quote-content">
+          <p class="quote-text">
+            Инвестируйте в качество кода — это окупается!<br />
+            Ваш сайт заслуживает профессиональной архитектуры
+          </p>
+          <p class="quote-author">- Сергей Попов</p>
+        </div>
+      </section>
+
+      <!-- Expertise Section -->
+      <section class="section" id="expertise">
+        <h3 class="section-title">Мой опыт</h3>
+        <div class="expertise-header">
+          <div class="expertise-header-left">
+            <h2 class="expertise-title">Инновации на основе опыта</h2>
+          </div>
+          <div class="expertise-header-right">
+            <p class="expertise-description">
+              Я специализируюсь на комплексном анализе архитектуры и предложений по
+              оптимизации веб-проектов, что позволяет улучшить работу и максимальную
+              производительность на всех этапах разработки и эксплуатации.
+            </p>
+          </div>
+        </div>
+        <hr class="expertise-divider" />
+        <div class="expertise-cards">
+          <div class="expertise-card">
+            <div class="expertise-card-image">
+              <img src="img/4_1.avif" alt="Обеспечение качества кода" />
+            </div>
+            <div class="expertise-card-content">
+              <h3 class="expertise-card-title">Обеспечение качества кода</h3>
+              <p class="expertise-card-description">
+                Я провожу комплексные проверки и обзоры кода, чтобы гарантировать, что ваши приложения соответствуют самым высоким стандартам качества и производительности.
+              </p>
+              <div class="expertise-card-tags">
+                <span class="expertise-tag">Обзор кода</span>
+                <span class="expertise-tag">Отслеживание ошибок</span>
+                <span class="expertise-tag">Аудит безопасности</span>
+                <span class="expertise-tag">Оптимизация производительности</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card hover-shadow-light" style="background-color: #f7d27e;">
-              <div class="card-body">
-                <i class="fas fa-code fa-3x mt-3 text-dark"></i>
-                <h5 class="card-title my-4 text-dark">Developer</h5>
-                <p class="card-text mb-3">
-                  My main product is the development of web-based application interfaces.
-                </p>
+          <div class="expertise-card expertise-card-reverse">
+            <div class="expertise-card-image">
+              <img src="img/4_2.avif" alt="Аудит веб-решений" />
+            </div>
+            <div class="expertise-card-content">
+              <h3 class="expertise-card-title">Аудит веб-решений</h3>
+              <p class="expertise-card-description">
+                Я провожу тщательную оценку веб-приложений для выявления областей улучшения и предоставляю действенные рекомендации.
+              </p>
+              <div class="expertise-card-tags">
+                <span class="expertise-tag">Проверка функций</span>
+                <span class="expertise-tag">Приёмочное тестирование</span>
+                <span class="expertise-tag">Анализ технического долга</span>
+                <span class="expertise-tag">Валидация проекта</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-0">
-            <div class="card hover-shadow-light">
-              <div class="card-body">
-                <i class="fas fa-pencil-alt fa-3x mt-3 text-dark"></i>
-                <h5 class="card-title my-4 text-dark">UX-designer</h5>
-                <p class="card-text mb-3">
-                  I’m developing new SPA, PWA and optimizing existing web interfaces.
-                </p>
+          <div class="expertise-card">
+            <div class="expertise-card-image">
+              <img src="img/4_3.avif" alt="Приёмочное тестирование и QA" />
+            </div>
+            <div class="expertise-card-content">
+              <h3 class="expertise-card-title">Приёмочное тестирование и QA</h3>
+              <p class="expertise-card-description">
+                Я обеспечиваю соответствие каждого аспекта вашего веб-приложения требованиям и стандартам посредством комплексных процессов тестирования и верификации.
+              </p>
+              <div class="expertise-card-tags">
+                <span class="expertise-tag">Приёмочное тестирование</span>
+                <span class="expertise-tag">Тестирование QA/QM</span>
+                <span class="expertise-tag">Валидация функций</span>
+                <span class="expertise-tag">Проверка требований</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Section: Design Block-->
 
-      <hr class="my-5" />
-
-      <!--Section: Design Block-->
-      <section>
-        <div class="row">
-          <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
-            <h3 class="text-uppercase mb-5">My experience</h3>
-            <figure class="border-left border-primary ps-3 py-2 mb-4">
-              <blockquote class="blockquote">
-                <h5 class="pb-3">
-                  <i class="fas fa-briefcase me-3" aria-hidden="true"></i>Javascript Developer
-                </h5>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0">
-                <p class="font-weight-bold text-body mb-2">February, 2018 - Present</p>
-                <p class="mb-0">Creating Web Interfaces, Managing Development Team. Optimization and Improvement
-                  code, redesign interfaces. Adapting existing solutions.</p>
-              </figcaption>
-            </figure>
-            <figure class="border-left border-primary ps-3 py-2 mb-4">
-              <blockquote class="blockquote">
-                <h5 class="pb-3">
-                  <i class="fas fa-briefcase me-3" aria-hidden="true"></i>Frontend developer (freelance).
-                </h5>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0">
-                <p class="font-weight-bold text-body mb-2">
-                  September 2013 - Present
-                </p>
-                <p class="mb-0">
-                  Create and design customized adaptive interfaces. Develop web products.
-                </p>
-              </figcaption>
-            </figure>
-            <figure class="border-left border-primary ps-3 py-2">
-              <blockquote class="blockquote">
-                <h5 class="pb-3">
-                  <i class="fas fa-briefcase me-3" aria-hidden="true"></i>Project Manager. Frontend developer
-                  (Fulltime).
-                </h5>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0">
-                <p class="font-weight-bold text-body mb-2">
-                  March 2007 - September 2013
-                </p>
-                <p class="mb-0">
-                  Development of medical information systems and medical applications interfaces:
-                </p>
-                <ul>
-                  <li>Medical Information System (MIS) for Emergency Medical Care </li>
-                  <li>Adaptation of Iias for mobile devices</li>
-                  <li>Medical information system for outpatient and inpatient care</li>
-                </ul>
-              </figcaption>
-            </figure>
+      <!-- FAQ Section -->
+      <section class="section" id="faq">
+        <h3 class="section-title">Частые вопросы</h3>
+        <div class="faq-content">
+          <div class="faq-header">
+            <h2 class="faq-title">Узнайте о часто задаваемых вопросах</h2>
           </div>
-          <div class="col-lg-6 text-uppercase">
-            <h3 class="text-uppercase mb-5">Skills</h3>
-            <div class="col">
-              <h6 class="my-4">Proven knowledge (experience 5+ years)</h6>
-              <i title="JavaScript" class="fab fa-3x fa-js text-warning mx-1"></i>
-              <i title="HTML5" class="fab fa-3x fa-html5 text-primary mx-1"></i>
-              <i title="CSS3" class="fab fa-3x fa-css3 text-info mx-1"></i>
-              <i title="GIT" class="fab fa-3x fa-git text-dark mx-1"></i>
-              <i title="GITHUB" class="fab fa-3x fa-github text-dark mx-1"></i>
-              <i title="Bootstrap" class="fab fa-3x fa-bootstrap text-secondary mx-1"></i>
-
-              <h6 class="my-4">Strong skills (experience 2+ years)</h6>
-              <i title="MDBootstrap" class="fab fa-3x fa-mdb text-primary mx-1"></i>
-              <i title="React.js" class="fab fa-3x fa-react text-info mx-1"></i>
-              <i title="NPM" class="fab fa-3x fa-npm text-warning mx-1"></i>
-              <i title="Gulp.js" class="fab fa-3x fa-gulp text-danger mx-1"></i>
-              <i title="Sass" class="fab fa-3x fa-sass text-danger mx-1"></i>
-              <i title="Figma" class="fab fa-3x fa-figma text-danger mx-1"></i>
-              <i title="Trello" class="fab fa-3x fa-trello text-secondary mx-1"></i>
-              <i title="Chart.js" class="fas fa-3x fa-chart-pie text-warning mx-1"></i>
-
-              <h6 class="my-4">Under study (experience less than 1 year)</h6>
-              <i title="Node.js" class="fab fa-node fa-3x text-warning mx-1"></i>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="1">
+                <span>Какие услуги вы предоставляете?</span>
+                <svg class="faq-caret" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                  <path d="M26 12L16 22L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer" data-answer-id="1">
+                <p>Специализируюсь на комплексном аудите и обеспечении качества фронтенд-решений:</p>
+                <div class="faq-answer-list">
+                  <div>1. Code Quality Audit - анализ качества кода и его оптимизация</div>
+                  <div>2. Архитектурный аудит фронтенд-решений</div>
+                  <div>3. Performance Review - анализ производительности</div>
+                  <div>4. Security Audit - проверка безопасности кода</div>
+                  <div>5. Best Practices Review - соответствие современным стандартам разработки</div>
+                  <div>6. Technical Debt Analysis - оценка и минимизация технического долга</div>
+                  <div>7. Migration Consulting - помощь в миграции между технологиями</div>
+                </div>
+                <p>Работаю с различными технологиями: React, Angular, Vue.js, кастомные решения и легаси код</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="2">
+                <span>Как начать работать вместе?</span>
+                <svg class="faq-caret" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                  <path d="M26 12L16 22L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer" data-answer-id="2">
+                <p>Для начала сотрудничества:</p>
+                <div class="faq-answer-list">
+                  <div>1. Свяжитесь со мной через форму на сайте или по email</div>
+                  <div>2. Предоставьте доступ к коду и документации</div>
+                  <div>3. Я организую бесплатную консультацию (30-60 минут)</div>
+                  <div>4. Проведу предварительный анализ вашего проекта</div>
+                  <div>5. Подготовлю детальный план аудита</div>
+                  <div>6. Заключим договор и начнем работу</div>
+                </div>
+                <p>На первой консультации обсудим все детали проекта и определим приоритетные области для аудита.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" data-faq-id="4">
+                <span>Как вы обеспечиваете качество проекта?</span>
+                <svg class="faq-caret" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                  <path d="M26 12L16 22L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer" data-answer-id="4">
+                <p>Мой подход к обеспечению качества включает:</p>
+                <div class="faq-answer-list">
+                  <div>1. Архитектурный анализ с использованием современных инструментов</div>
+                  <div>2. Code Review по лучшим практикам индустрии</div>
+                  <div>3. Performance Analysis с детальными метриками</div>
+                  <div>4. Security Assessment на всех уровнях</div>
+                  <div>5. Documentation Review и улучшение</div>
+                  <div>6. Technical Debt Management план</div>
+                  <div>7. Best Practices Implementation рекомендации</div>
+                  <div>8. Continuous Integration процессы</div>
+                </div>
+                <p>Все результаты документируются в подробном отчете с рекомендациями по улучшению.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Section: Design Block-->
-
-      <hr class="my-5" id="stages" />
-
-      <!--Section: Design Block-->
-      <section>
-
-        <h2 class="text-center my-5">Stages</h2>
-
-        <p class="text-center mb-5 mx-auto w-responsive">
-          Each project goes through several stages of development and at each step all actions are agreed with the
-          customer. For
-          The optimal technology is chosen to create the end product.
-        </p>
-
-        <div class="row">
-          <div class="col-12">
-            <!-- Pills navs -->
-            <ul class="nav nav-pills nav-justified mb-3 mx-n2 mt-n2" id="issuesTabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="documents-tab" data-mdb-toggle="pill" href="#documents" role="tab"
-                  aria-controls="documents" aria-selected="true">Execution</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="design-tab" data-mdb-toggle="pill" href="#design" role="tab"
-                  aria-controls="design" aria-selected="false">Design</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="architecture-tab" data-mdb-toggle="pill" href="#architecture" role="tab"
-                  aria-controls="architecture" aria-selected="false">Layout</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="development-tab" data-mdb-toggle="pill" href="#development" role="tab"
-                  aria-controls="development" aria-selected="false">Coding</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="publishing-tab" data-mdb-toggle="pill" href="#publishing" role="tab"
-                  aria-controls="publishing" aria-selected="false">Release</a>
-              </li>
-            </ul>
-            <!-- Pills navs -->
-
-            <!-- Pills content -->
-            <div class="tab-content pt-3" id="servicesContent">
-              <div class="tab-pane fade show active" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-                <div class="card">
-                  <div class="card-body d-flex p-5">
-                    <i class="fas fa-file-invoice fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
-                    <p class="mb-0">
-                      A package of documents is drawn up with each client, including a contract, a technical
-                      specification and
-                      estimate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
-                <div class="card">
-                  <div class="card-body d-flex p-5">
-                    <i class="fas fa-pencil-alt fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
-                    <p class="mb-0">
-                      Develop a flow chart of the future product to harmonize the logic of user experience. Create
-                      design of the project, harmonization of appearance of the end product.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="architecture" role="tabpanel" aria-labelledby="architecture-tab">
-                <div class="card">
-                  <div class="card-body d-flex p-5">
-                    <i class="fas fa-sitemap fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
-                    <p class="mb-0">
-                      Adaptive crosbourg layout of the agreed design layout.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="development" role="tabpanel" aria-labelledby="development-tab">
-                <div class="card">
-                  <div class="card-body d-flex p-5">
-                    <i class="fas fa-code fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
-                    <p class="mb-0">
-                      Configuring interaction of interactive elements is in progress. Database query programming
-                      data (if necessary) or to external resources.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="publishing" role="tabpanel" aria-labelledby="publishing-tab">
-                <div class="card">
-                  <div class="card-body d-flex p-5">
-                    <i class="fas fa-laptop fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
-                    <p class="mb-0">
-                      Publishing the finished project on hosting. Testing the product for bugs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Pills content -->
-          </div>
-        </div>
-      </section>
-      <!--Section: Design Block-->
-    </div>
-
-    <!--Section: Design Block-->
-    <section>
-      <div class="bg-image bg-fixed text-center" style="
-            background-image: url('img/bg-mask.jpg');
-            height: 400px;
-          ">
-        <div class="mask" style="background-color: rgba(63, 81, 181, 0.7);">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-              <h5 class="display-6 mb-5">
-                <i class="fas fa-quote-left fa-xs" aria-hidden="true"></i>
-                Where does innovative thinking come from? I think it’s a mood.
-                <i class="fas fa-quote-right fa-xs" aria-hidden="true"></i>
-              </h5>
-              <p class="lead font-italic mb-0">~ Elon Musk</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Section: Design Block-->
-
-    <div class="container my-5">
-
-      <hr class="my-5" />
-
-      <!--Section: Design Block-->
-      <section class="text-center mb-5" id="contacts">
-        <a class="text-black" target="_blank" href="mailto:contact@dotdev.site"><i
-            class="fas fa-envelope fa-2x text-dark"></i></a>
-        <p class="mb-0"><a class="text-black" target="_blank" href="mailto:contact@dotdev.site">contact@dotdev.site</a>
-        </p>
-
-
-      </section>
-      <!--Section: Design Block-->
     </div>
   </main>
 
-  <!--Section: Design Block-->
-  <section>
-    <div style="background-color: #f7d27f;">
-      <div class="d-flex align-items-center justify-content-center h-100 py-5">
-        <div class="text-center my-3">
-          <h2 class="mb-4">Would you like a great project?</h2>
-          <h5 class="mb-0">Just write a letter!</h5>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-border">
+      <div class="footer-container">
+        <div class="footer-social">
+          <a href="https://github.com/dotikdeveloper" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://t.me/dotikdeveloper" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="footer-social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.193l-1.87 8.763c-.14.625-.537.778-1.084.483l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.12l-6.87 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+            </svg>
+          </a>
+          <a href="https://vk.com/dotikdeveloper" target="_blank" rel="noopener noreferrer" aria-label="VKontakte" class="footer-social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.785 16.241s.287-.029.435-.174c.136-.133.132-.384.132-.384s-.02-1.123.515-1.288c.526-.164 1.203 1.09 1.919 1.57.54.36.95.281.95.281l1.919-.028s1.003-.063.527-.855c-.039-.063-.277-.58-1.448-1.64-1.225-1.11-.537-.931.21-1.427.466-.307 1.047-.716 1.047-1.54 0-.716-.107-1.08-.107-1.08s-.075-.18-.21-.279c-.162-.123-.388-.162-.388-.162h-2.15s-.159-.02-.277.054c-.108.068-.178.225-.178.225s-.32.84-.746 1.556c-.9 1.44-1.26 1.516-1.408 1.428-.343-.21-.258-.84-.258-1.288 0-1.4.213-1.98-.416-2.13-.209-.05-.362-.086-.897-.092-.685-.007-1.262.002-1.59.164-.22.108-.39.35-.286.364.13.018.422.08.576.293.2.278.193.9.193.9s.115 1.72-.268 1.933c-.264.144-.625-.15-1.404-1.516-.396-.68-.695-1.432-.695-1.432s-.058-.14-.161-.216c-.124-.092-.297-.12-.297-.12h-2.05s-.465.014-.637.2c-.152.164-.011.5-.011.5s1.79 4.19 3.815 6.3c1.857 1.93 3.97 1.805 3.97 1.805h.955s.286-.018.43-.133c.132-.104.128-.243.128-.243s-.018-.536.08-.75c.079-.17.262-.28.262-.28z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  <!--Section: Design Block-->
-  <script src="js/mdb.min.js"></script>
-  <script src="plugins/js/all.min.js"></script>
-  <script src="js/send.js"></script>
-</body>
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p class="footer-copyright">© <span id="currentYear"></span> Сергей Попов. Все права защищены.</p>
+            <div class="footer-links">
+              <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+              <a href="terms.html" class="footer-link">Пользовательское соглашение</a>
+            </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Contact Form Modal -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-content">
+      <h2 class="modal-title">Связаться со мной</h2>
+      <form id="contactForm" class="contact-form">
+        <!-- Honeypot field for spam protection -->
+        <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="checkbox" name="bot_check" class="honeypot" tabindex="-1" aria-hidden="true" />
+        <div class="form-group">
+          <label for="name" class="form-label">Имя</label>
+          <input type="text" id="name" name="name" class="form-input" required placeholder="Имя" />
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Телефон</label>
+          <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+7 (___) ___-__-__" />
+          <span class="form-error" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-checkbox">
+            <input type="checkbox" id="showMessage" />
+            <span>Оставить сообщение</span>
+          </label>
+        </div>
+        <div class="form-group" id="messageGroup" style="display: none;">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Ваше сообщение..."></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="closeModal">Отмена</button>
+          <button type="submit" class="btn btn-primary" id="submitForm">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
