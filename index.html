@@ -1,116 +1,385 @@
 <!DOCTYPE html>
-<html lang="en" class="full-height">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Smartly web products</title>
-    <meta name="description" content="I create perfectly smart web products">
-    <link rel="shortcut icon" href="media/logo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="yandex-verification" content="e2a4d47d4dc62fe8" />
+  <title>Creating Web Interfaces</title>
+  <meta name="description" content="This is the personal site of webmaster Sergei Popov. Creation of unique and convenient web interfaces. Admin panels for sites. Web applications. Web applications. Progressive Web applications. Single-page web applications.>
+  <!-- MDB icon -->
+  <link rel=" icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB ESSENTIAL -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- MDB PLUGINS -->
+  <link rel="stylesheet" href="plugins/css/all.min.css" />
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- Start your project here-->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbar-scroll">
+      <div class="container">
+        <a class="navbar-brand" href="#intro">
+          <img src="img/logo.png" height="30" loading="lazy" alt="DotDev.site" />
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stages">Stages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" target="_blank" href="https://www.facebook.com/DotikDeveloper">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/dotikdeveloper">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
 
-    <!-- header -->
-    <header class="header">
-        <div class="header__block container">
-            <a class="header__brand brand" href="#home" alt="Logo"><img class="brand__logo"
-                    src="media/logo/logo_linear.svg" alt="logo" height="50"></a>
-            <ul class="header__menu menu">
-                <li class="menu__item"><a href="#about-me" class="menu__link scroll-to">about me</a></li>
-                <li class="menu__item"><a href="#" class="menu__link scroll-to">portfolio</a></li>
-                <li class="menu__item"><a href="#" class="menu__link scroll-to">price</a></li>
-                <li class="menu__item"><a href="#" class="menu__link scroll-to">contacts</a></li>
+    <!--Section: Design Block-->
+    <section>
+      <!-- Intro -->
+      <div id="intro" class="text-center bg-image vh-100" style="background-image: url(img/bg.jpg);">
+        <div class="mask" style="background-color: rgba(255, 255, 255, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100 mt-4">
+            <div>
+              <h1 class="display-2 mb-4"><strong>Sergei Popov</strong></h1>
+              <h5 class="text-uppercase mb-5">
+                <mark style="background-color: rgba(248, 192, 67, 0.7);">Frontend developer and UX designer</mark>
+              </h5>
+              <a href="#about" class="btn btn-floating btn-lg btn-dark"><i class="fas fa-angle-down"
+                  aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Intro -->
+    </section>
+    <!--Section: Design Block-->
+  </header>
+
+  <main>
+    <div class="container my-5">
+      <!--Section: Design Block-->
+      <section class="text-center pt-5" id="about">
+        <h2 class="mb-5 pt-5">About me</h2>
+
+        <p class="text-center mb-5 mx-auto w-responsive">
+          I am Frontend developer and UX designer. My main direction is to create user-friendly web application
+          interfaces.
+          I’m interested in new challenges and the opportunity to apply my skills and experience to complex projects.
+        </p>
+
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card hover-shadow-light">
+              <div class="card-body">
+                <i class="fas fa-laptop fa-3x mt-3 text-dark"></i>
+                <h5 class="card-title my-4 text-dark">Freelance</h5>
+                <p class="card-text mb-3">
+                  Working as a freelancer allows you to fully immerse yourself in the client’s project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card hover-shadow-light" style="background-color: #f7d27e;">
+              <div class="card-body">
+                <i class="fas fa-code fa-3x mt-3 text-dark"></i>
+                <h5 class="card-title my-4 text-dark">Developer</h5>
+                <p class="card-text mb-3">
+                  My main product is the development of web-based application interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="card hover-shadow-light">
+              <div class="card-body">
+                <i class="fas fa-pencil-alt fa-3x mt-3 text-dark"></i>
+                <h5 class="card-title my-4 text-dark">UX-designer</h5>
+                <p class="card-text mb-3">
+                  I’m developing new SPA, PWA and optimizing existing web interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+
+      <hr class="my-5" />
+
+      <!--Section: Design Block-->
+      <section>
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
+            <h3 class="text-uppercase mb-5">My experience</h3>
+            <figure class="border-left border-primary ps-3 py-2 mb-4">
+              <blockquote class="blockquote">
+                <h5 class="pb-3">
+                  <i class="fas fa-briefcase me-3" aria-hidden="true"></i>Javascript Developer
+                </h5>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                <p class="font-weight-bold text-body mb-2">February, 2018 - Present</p>
+                <p class="mb-0">Creating Web Interfaces, Managing Development Team. Optimization and Improvement
+                  code, redesign interfaces. Adapting existing solutions.</p>
+              </figcaption>
+            </figure>
+            <figure class="border-left border-primary ps-3 py-2 mb-4">
+              <blockquote class="blockquote">
+                <h5 class="pb-3">
+                  <i class="fas fa-briefcase me-3" aria-hidden="true"></i>Frontend developer (freelance).
+                </h5>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                <p class="font-weight-bold text-body mb-2">
+                  September 2013 - Present
+                </p>
+                <p class="mb-0">
+                  Create and design customized adaptive interfaces. Develop web products.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="border-left border-primary ps-3 py-2">
+              <blockquote class="blockquote">
+                <h5 class="pb-3">
+                  <i class="fas fa-briefcase me-3" aria-hidden="true"></i>Project Manager. Frontend developer
+                  (Fulltime).
+                </h5>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                <p class="font-weight-bold text-body mb-2">
+                  March 2007 - September 2013
+                </p>
+                <p class="mb-0">
+                  Development of medical information systems and medical applications interfaces:
+                </p>
+                <ul>
+                  <li>Medical Information System (MIS) for Emergency Medical Care </li>
+                  <li>Adaptation of Iias for mobile devices</li>
+                  <li>Medical information system for outpatient and inpatient care</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6 text-uppercase">
+            <h3 class="text-uppercase mb-5">Skills</h3>
+            <div class="col">
+              <h6 class="my-4">Proven knowledge (experience 5+ years)</h6>
+              <i title="JavaScript" class="fab fa-3x fa-js text-warning mx-1"></i>
+              <i title="HTML5" class="fab fa-3x fa-html5 text-primary mx-1"></i>
+              <i title="CSS3" class="fab fa-3x fa-css3 text-info mx-1"></i>
+              <i title="GIT" class="fab fa-3x fa-git text-dark mx-1"></i>
+              <i title="GITHUB" class="fab fa-3x fa-github text-dark mx-1"></i>
+              <i title="Bootstrap" class="fab fa-3x fa-bootstrap text-secondary mx-1"></i>
+
+              <h6 class="my-4">Strong skills (experience 2+ years)</h6>
+              <i title="MDBootstrap" class="fab fa-3x fa-mdb text-primary mx-1"></i>
+              <i title="React.js" class="fab fa-3x fa-react text-info mx-1"></i>
+              <i title="NPM" class="fab fa-3x fa-npm text-warning mx-1"></i>
+              <i title="Gulp.js" class="fab fa-3x fa-gulp text-danger mx-1"></i>
+              <i title="Sass" class="fab fa-3x fa-sass text-danger mx-1"></i>
+              <i title="Figma" class="fab fa-3x fa-figma text-danger mx-1"></i>
+              <i title="Trello" class="fab fa-3x fa-trello text-secondary mx-1"></i>
+              <i title="Chart.js" class="fas fa-3x fa-chart-pie text-warning mx-1"></i>
+
+              <h6 class="my-4">Under study (experience less than 1 year)</h6>
+              <i title="Node.js" class="fab fa-node fa-3x text-warning mx-1"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+
+      <hr class="my-5" id="stages" />
+
+      <!--Section: Design Block-->
+      <section>
+
+        <h2 class="text-center my-5">Stages</h2>
+
+        <p class="text-center mb-5 mx-auto w-responsive">
+          Each project goes through several stages of development and at each step all actions are agreed with the
+          customer. For
+          The optimal technology is chosen to create the end product.
+        </p>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-justified mb-3 mx-n2 mt-n2" id="issuesTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="documents-tab" data-mdb-toggle="pill" href="#documents" role="tab"
+                  aria-controls="documents" aria-selected="true">Execution</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="design-tab" data-mdb-toggle="pill" href="#design" role="tab"
+                  aria-controls="design" aria-selected="false">Design</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="architecture-tab" data-mdb-toggle="pill" href="#architecture" role="tab"
+                  aria-controls="architecture" aria-selected="false">Layout</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="development-tab" data-mdb-toggle="pill" href="#development" role="tab"
+                  aria-controls="development" aria-selected="false">Coding</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="publishing-tab" data-mdb-toggle="pill" href="#publishing" role="tab"
+                  aria-controls="publishing" aria-selected="false">Release</a>
+              </li>
             </ul>
-            <div class="header__icon">
-                <img src="media/icon/linkedin.svg" alt="linkedin" height="20">
-                <img src="media/icon/facebook.svg" alt="facebook" height="20">
-                <img src="media/icon/twitter.svg" alt="twitter" height="20">
-            </div>
-            <button class="header__btn btn" type="submit">click me</button>
-        </div>
-    </header>
+            <!-- Pills navs -->
 
-    <!-- home -->
-    <section id="home" class="header__section">
-        <div class="header__content">
-            <div class="content container">
-                <div class="content__colume content__colume--left">
-                    <h1 class="content__title">
-                        Creating user-friendly web products
-                    </h1>
-                    <h3 class="content__subtitle">click and get a design logo for free</h3>
-                    <button class="content__button btn" type="submit">click me</button>
+            <!-- Pills content -->
+            <div class="tab-content pt-3" id="servicesContent">
+              <div class="tab-pane fade show active" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+                <div class="card">
+                  <div class="card-body d-flex p-5">
+                    <i class="fas fa-file-invoice fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
+                    <p class="mb-0">
+                      A package of documents is drawn up with each client, including a contract, a technical
+                      specification and
+                      estimate.
+                    </p>
+                  </div>
                 </div>
-                <div class="content__colume content__colume--right">
-                    <img class="content__img" src="media/bg/home__col_right.svg" alt="Welcome">
+              </div>
+              <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
+                <div class="card">
+                  <div class="card-body d-flex p-5">
+                    <i class="fas fa-pencil-alt fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
+                    <p class="mb-0">
+                      Develop a flow chart of the future product to harmonize the logic of user experience. Create
+                      design of the project, harmonization of appearance of the end product.
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div class="tab-pane fade" id="architecture" role="tabpanel" aria-labelledby="architecture-tab">
+                <div class="card">
+                  <div class="card-body d-flex p-5">
+                    <i class="fas fa-sitemap fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
+                    <p class="mb-0">
+                      Adaptive crosbourg layout of the agreed design layout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="development" role="tabpanel" aria-labelledby="development-tab">
+                <div class="card">
+                  <div class="card-body d-flex p-5">
+                    <i class="fas fa-code fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
+                    <p class="mb-0">
+                      Configuring interaction of interactive elements is in progress. Database query programming
+                      data (if necessary) or to external resources.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="publishing" role="tabpanel" aria-labelledby="publishing-tab">
+                <div class="card">
+                  <div class="card-body d-flex p-5">
+                    <i class="fas fa-laptop fa-3x pe-4 pe-md-5" aria-hidden="true"></i>
+                    <p class="mb-0">
+                      Publishing the finished project on hosting. Testing the product for bugs.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Pills content -->
+          </div>
         </div>
-    </section>
+      </section>
+      <!--Section: Design Block-->
+    </div>
 
-    <!-- about -->
-    <section id="about-me" class="section__about h100">
-        <div class="about__content  content container">
-
-            <div class="content__colume content__colume--left">
-                <img class="content__img" src="media/bg/about.svg" alt="Skills">
+    <!--Section: Design Block-->
+    <section>
+      <div class="bg-image bg-fixed text-center" style="
+            background-image: url('img/bg-mask.jpg');
+            height: 400px;
+          ">
+        <div class="mask" style="background-color: rgba(63, 81, 181, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h5 class="display-6 mb-5">
+                <i class="fas fa-quote-left fa-xs" aria-hidden="true"></i>
+                Where does innovative thinking come from? I think it’s a mood.
+                <i class="fas fa-quote-right fa-xs" aria-hidden="true"></i>
+              </h5>
+              <p class="lead font-italic mb-0">~ Elon Musk</p>
             </div>
-            <div class="content__colume content__colume--right">
-                <h2 class="content__title">
-                    About me
-                </h2>
-                <p class="content__subtitle">Hi! My name is Sergey Popov. <br>I am a frontend developer and project Manager.<br>
-                    I create modern websites and user-friendly web applications.</p>
-                <h3>My skills</h3>
-
-                <ol>
-
-                    <li>Frontend development
-                        <ul>
-                            <li>JavaScript (ES6-ES11)</li>
-                            <li>HTML (HTML5)</li>
-                            <li>CSS (CSS3)</li>
-                            <li>Gulp</li>
-                            <li>BEM</li>
-                            <li>SASS</li>
-                            <li>GIT</li>
-                        </ul>
-                    </li>
-                    <br>
-                    <li>Web Design
-                        <ul>
-                            <li>UX Design</li>
-                            <li>UI Design</li>
-                            <li>Figma</li>
-                            <li>Adobe Photoshop</li>
-                            <li>GIMP</li>
-                            <li>Inkscape</li>
-                        </ul>
-
-                    </li>
-                    
-                </ol>
-
-                <!-- <button class="content__button btn" type="submit">click me</button> -->
-
-
-
-            </div>
-
+          </div>
         </div>
+      </div>
     </section>
+    <!--Section: Design Block-->
+
+    <div class="container my-5">
+
+      <hr class="my-5" />
+
+      <!--Section: Design Block-->
+      <section class="text-center mb-5" id="contacts">
+        <a class="text-black" target="_blank" href="mailto:contact@dotdev.site"><i
+            class="fas fa-envelope fa-2x text-dark"></i></a>
+        <p class="mb-0"><a class="text-black" target="_blank" href="mailto:contact@dotdev.site">contact@dotdev.site</a>
+        </p>
 
 
+      </section>
+      <!--Section: Design Block-->
+    </div>
+  </main>
 
-
-
-
-
-
-    <script src="js/script.js"></script>
+  <!--Section: Design Block-->
+  <section>
+    <div style="background-color: #f7d27f;">
+      <div class="d-flex align-items-center justify-content-center h-100 py-5">
+        <div class="text-center my-3">
+          <h2 class="mb-4">Would you like a great project?</h2>
+          <h5 class="mb-0">Just write a letter!</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Section: Design Block-->
+  <script src="js/mdb.min.js"></script>
+  <script src="plugins/js/all.min.js"></script>
+  <script src="js/send.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+
+.card.hover-shadow-light,
+.hover-shadow-light {
+  transition: all 0.5s ease-in-out;
+}
+
+.card.hover-shadow-light:hover,
+.hover-shadow-light:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.5s ease-in-out;
+}
+
+.blockquote-footer:before {
+  content: none;
+}
+
+.border-left {
+  border-left: 3px solid #facc62 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+  background-color: #4f66a7;
+}
+
+.price {
+  position: relative;
+}
+.price:before {
+  font-size: 1.33rem;
+  position: absolute;
+  margin-left: -.7rem;
+}
+.price:after {
+  content: "$";
+  font-size: 1.33rem;
+  position: absolute;  
+  margin-left: .5rem;
+}
